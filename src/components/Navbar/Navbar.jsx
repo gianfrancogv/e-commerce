@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <header>
         <div className="logo-container">
-            <img src="src/assets/images/logo.png" alt="Recordland Logo" />
+            <img src="/img/logo.png" alt="Recordland Logo" />
         </div>
 
         <nav>

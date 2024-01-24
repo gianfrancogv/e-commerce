@@ -1,6 +1,7 @@
 import './App.css'
 import Navbar from "./components/NavBar/Navbar"
 import ItemListContainer from './components/ItemListContainer/ItemListContainer'
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer'
 
 function App() {
 
@@ -8,6 +9,7 @@ function App() {
     <>
       <Navbar/>
       <ItemListContainer greeting="Hola Componente" />
+      <ItemDetailContainer />
     </>
   )
 }
