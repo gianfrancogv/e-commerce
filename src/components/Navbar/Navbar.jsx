@@ -1,22 +1,31 @@
 import './Navbar.css'
 import CartWidget from '../CartWidget/CartWidget'
+import {Link, NavLink} from 'react-router-dom'
 
 const Navbar = () => {
   return (
     <header>
-        <div className="logo-container">
-            <img src="/img/logo.png" alt="Recordland Logo" />
-        </div>
+        <Link to="/">
+          <div className="logo-container">
+              <img src="/img/logo.png" alt="Recordland Logo" />
+          </div>
+        </Link>
 
         <nav>
             <ul>
-                <li>Vinilos</li>
-                <li>CDs</li>
-                <li>Libros</li>
+                <li>
+                  <NavLink to="/categoria/1">Vinilos</NavLink>
+                </li>
+                <li>
+                  <NavLink to="/categoria/2">CDs</NavLink>
+                </li>
+                <li>
+                  <NavLink to="/categoria/3">Libros</NavLink>
+                </li>
             </ul>
         </nav>
         
-        <CartWidget></CartWidget>
+        <CartWidget />
     </header>
   )
 }

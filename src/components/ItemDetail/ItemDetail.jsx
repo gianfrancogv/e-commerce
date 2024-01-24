@@ -1,8 +1,9 @@
 /* eslint-disable react/prop-types */
+import './ItemDetail.css'
 
 const ItemDetail = ({id, nombre, precio, img}) => {
   return (
-    <div>
+    <div className="contenedor-item">
         <h2>Nombre: {nombre}</h2>
         <h3>Precio: {precio}</h3>
         <p>Id: {id}</p>
