@@ -1,14 +1,37 @@
 .card-producto {
-    background-color: bisque;
-    border-radius: 10px;
-    width: 15rem;
-    padding: 1rem;
-    margin: 1rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 0 0 25px 25px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 250px;
+}
+
+.card-producto .info {
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.card-producto .info .nombre {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.card-producto .info .artista {
+    margin: 0;
+    font-weight: 600;
+    font-size: .8rem;
+}
+
+.card-producto .info .precio {
+    font-weight: 700;
+    font-size: 1.25rem;
 }
 
 .card-producto img {
-    max-width: 150px;
+    width: 100%;
+    overflow: hidden;
 }

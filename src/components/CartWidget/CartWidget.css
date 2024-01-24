@@ -1,17 +1,19 @@
 .cart-container {
-    max-width: 40px;
+    width: 300px;
     position: relative;
     cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .cart-container img {
-    width: 100%;
+    width: 35px;
 }
 
 .badge {
     position: absolute;
     top: -5px;
-    left: 5px;
+    right: 10px;
     background-color: red;
     color: white;
     border-radius: 50px;

@@ -1,3 +1,5 @@
-h2 {
-    margin-left: 40px;
+.main-container {
+    max-width: 1400px;
+    margin: auto;
+    padding: 20px 30px;
 }
