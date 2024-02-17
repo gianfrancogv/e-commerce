@@ -1,0 +1,42 @@
+.contador {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 120px;
+}
+
+.contador button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 50px;
+    border: none;
+    font-size: 20px;
+    background-color: #0222311A;
+    color: #022231;
+    width: 30px;
+    height: 30px;
+}
+
+.contador .count {
+    color: #022231;
+    font-size: 16px;
+    font-weight: 700;
+    min-width: 60px;
+    text-align: center;
+}
+
+.boton-agregar {
+    background-color: #022231;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.boton-agregar:hover {
+    background-color: #011017;
+}
