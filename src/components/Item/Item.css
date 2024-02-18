@@ -16,7 +16,7 @@
     flex-grow: 1;
 }
 
-.card-producto .info .nombre {
+.card-producto .info .titulo {
     margin-top: 0;
     margin-bottom: 10px;
 }

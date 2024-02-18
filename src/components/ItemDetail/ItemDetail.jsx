@@ -7,7 +7,7 @@ import ItemCount from '../itemCount/itemCount';
 
 import './ItemDetail.css'
 
-const ItemDetail = ({id, nombre, artista, precio, img, stock}) => {
+const ItemDetail = ({id, titulo, artista, precio, img, stock}) => {
 
   const [agregarCantidad, setAgregarCantidad] = useState(0);
 
@@ -16,7 +16,7 @@ const ItemDetail = ({id, nombre, artista, precio, img, stock}) => {
   const manejadorCantidad = (cantidad) => {
     setAgregarCantidad(cantidad);
 
-    const item = {id, nombre, precio};
+    const item = {id, titulo, precio};
     agregarAlCarrito(item, cantidad);
   }
 
@@ -25,14 +25,14 @@ const ItemDetail = ({id, nombre, artista, precio, img, stock}) => {
 
       <div className='imagen-contador'>
         <div className="imagen">
-          <img src={img} alt={nombre} />
+          <img src={img} alt={titulo} />
         </div>
         {
           agregarCantidad > 0 ? (<Link to="/cart">Terminar Compra</Link>) : (<ItemCount inicial={1} stock={stock} funcionAgregar={manejadorCantidad} />)
         }
       </div>
       <div className="info">
-        <h1>Album: {nombre}</h1>
+        <h1>Album: {titulo}</h1>
         <h2>Artista: {artista}</h2>
         <h3>Precio: ${precio}</h3>
         <p>Stock: {stock}</p>
