@@ -1,5 +1,8 @@
+.item-list-container h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
 .main-container {
-    max-width: 1400px;
     margin: auto;
-    padding: 20px 30px;
 }

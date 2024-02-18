@@ -1,12 +1,7 @@
 .contenedor-productos {
     padding-top: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
-}
-
-.contenedor-productos::after {
-    content: "";
-    flex: auto;
 }

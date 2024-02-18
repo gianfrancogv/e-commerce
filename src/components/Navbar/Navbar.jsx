@@ -5,7 +5,7 @@ import { Link, NavLink } from 'react-router-dom'
 const Navbar = () => {
   return (
     <header>
-      <div>
+      <div className='main-container'>
         <Link to="/">
           <div className="logo-container">
             <img src="/img/logo.png" alt="Recordland Logo" />

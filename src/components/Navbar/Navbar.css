@@ -6,8 +6,6 @@ header > div {
     align-items: center;
     justify-content: space-between;
     padding: 10px 30px;
-    max-width: 1400px;
-    margin: auto;
 }
 
 .logo-container {
