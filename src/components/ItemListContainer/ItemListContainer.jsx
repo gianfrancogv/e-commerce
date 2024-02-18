@@ -16,10 +16,10 @@ const ItemListContainer = () => {
   const {idCategoria} = useParams();
 
   useEffect( () => {
-    const misProductos = idCategoria ? query(collection(db, "items"), where("idCat", "==", idCategoria)) : collection(db, "items")   
+    const misProductos = idCategoria ? query(collection(db, "inventario"), where("idCat", "==", idCategoria)) : collection(db, "inventario")   
     getDocs(misProductos)
       .then(res => {
-        const nuevosProductos = res.docs.map(doc => {
+        const nuevosProductos = res.docs.map((doc) => {
           const data = doc.data();
           return {id: doc.id, ...data};
         })
